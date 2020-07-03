@@ -1,0 +1,21 @@
+.workSpace {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFD2D2;
+}
+
+.heading {
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    background-color: #8ff6f6;
+}
+
+.main {
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    background-color: #d0d0d0;
+}
