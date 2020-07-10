@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background : #f5f5f5;
+    margin:0;
+    overflow: hidden;
+}
+
+h3{
+    font-size: 1.5em;
+    color: #7b7b7b;
+}
+
+.app {
+    margin: 0;
+    padding: 0;
+}
+
+/*__________Side bar menu__________*/
+
+.sideBar{
+    height: 100vh;
+    float: left;
+    position: absolute;
+    background-color: #912D2D;
+    border-radius: 0 15px 15px 0;
+    transition: 250ms;
+    display: flex;
+    flex-flow: column;
+}
+
+.sbOpened{
+    width: 200px;
+}
+
+.sbClosed{
+    width: 100px;
+}
+
+.sideBar header{
+    text-align: right;
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #FFD4D4;
+    transition: 200ms;
+}
+
+.sideBar span:hover {
+    cursor: pointer;
+    color: #ff8f8f;
+    transform: scale(1.01);
+}
+
+.sideBar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 25px;
+}
+
+.listContainer img{
+    width: 50px;
+}
+
+.sideBar li{
+    color: #FFD4D4;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: 250ms;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.sideBar li:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    color: #ffa6a6;
+    box-shadow: 0 2px 5px #b43a3a;
+}
+
+.listContainer{
+    width: 100%;
+    flex-grow : 1;
+    background-color: #7D2222;
+    border-radius: 0 50px 15px 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.noUnder{
+    text-decoration: none;
+}
+
+.userProfile{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.profileImgNormal{
+    width: 100px;
+    transition: 250ms;
+    border-radius: 25%;
+    box-shadow: 0 2px 5px #ef6d6d;
+}
+.profileImgSmall{
+    width: 60px;
+    transition: 250ms;
+    border-radius: 25%;
+    box-shadow: 0 2px 5px #ef6d6d;
+}
+
+.userProfile p{
+    margin: 10px 0;
+    color: #FFD2D2;
+    transition: 250ms;
+    font-size: 0.8em;
+}
+
+.infoBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #912D2D;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 25px 10px;
+}
+
+.dataCont{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6em;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.dataCont p{
+    margin: 2px 0;
+    color: #E88282;
+}
+.sideBar footer{
+    font-size: 0.6em;
+    color: #E88282;
+    position: absolute;
+    text-align: center;
+    height: 2.5rem;
+    width: 100%;
+    bottom: 0;
+}
+
+/*__________Main__________*/
+
+.main{
+    background-color: white;
+    height: 100vh;
+    transition: 250ms;
+}
+
+.complete{
+    margin-left: 100px;
+}
+
+.incomplete{
+    margin-left: 200px;
+}
+
+.main header{
+    padding: 15px 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header span{
+    font-weight: lighter;
+}
+
+header input{
+    border: solid #e8e8e8 1px;
+    border-radius: 30px;
+    outline: none;
+    padding: 10px 50px;
+    width: 25%;
+}
+
+.workPlace{
+    margin: 0 30px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+    height: 80%;
+    border: solid #dbdbdb 1px;
+}
+
+.homeWorkPlace{
+    margin: 0 30px;
+    border-radius: 15px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.objectiveStatus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+    border: solid #dbdbdb 1px;
+}
+
+.objCount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.objNum{
+    padding: 20px 50px;
+    margin: 10px;
+    font-size: 2em;
+    border-radius: 15px;
+    background-color: #fff;
+    border: solid #dbdbdb 1px;
+}
