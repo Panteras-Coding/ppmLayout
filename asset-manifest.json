@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ppmLayout/static/css/main.2236ccbc.chunk.css",
+    "main.js": "/ppmLayout/static/js/main.56931185.chunk.js",
+    "main.js.map": "/ppmLayout/static/js/main.56931185.chunk.js.map",
+    "runtime-main.js": "/ppmLayout/static/js/runtime-main.eeb9f2f8.js",
+    "runtime-main.js.map": "/ppmLayout/static/js/runtime-main.eeb9f2f8.js.map",
+    "static/js/2.4369a458.chunk.js": "/ppmLayout/static/js/2.4369a458.chunk.js",
+    "static/js/2.4369a458.chunk.js.map": "/ppmLayout/static/js/2.4369a458.chunk.js.map",
+    "index.html": "/ppmLayout/index.html",
+    "precache-manifest.96630d42345c7409f60ceebd37d70426.js": "/ppmLayout/precache-manifest.96630d42345c7409f60ceebd37d70426.js",
+    "service-worker.js": "/ppmLayout/service-worker.js",
+    "static/css/main.2236ccbc.chunk.css.map": "/ppmLayout/static/css/main.2236ccbc.chunk.css.map",
+    "static/js/2.4369a458.chunk.js.LICENSE.txt": "/ppmLayout/static/js/2.4369a458.chunk.js.LICENSE.txt",
+    "static/media/LOGO_Blanco.png": "/ppmLayout/static/media/LOGO_Blanco.72a3a84e.png",
+    "static/media/calendar.png": "/ppmLayout/static/media/calendar.d1117e5b.png",
+    "static/media/workplace.png": "/ppmLayout/static/media/workplace.17d2e326.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eeb9f2f8.js",
+    "static/js/2.4369a458.chunk.js",
+    "static/css/main.2236ccbc.chunk.css",
+    "static/js/main.56931185.chunk.js"
+  ]
+}
