@@ -3,10 +3,10 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import Dashboard from "./Dashboard";
-import WorkTable from "./WorkTable";
-import Inbox from "./Inbox";
-import Calendar from "./Calendar";
+import Dashboard from "./Views/Dashboard";
+import WorkTable from "./Views/WorkTable";
+import Inbox from "./Views/Inbox";
+import Calendar from "./Views/Calendar";
 
 const WorkPlace = (props) => {
 

@@ -14,6 +14,26 @@ h3{
     color: #7b7b7b;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ECECEC;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #DDDDDD ;
+}
+
 .app {
     margin: 0;
     padding: 0;
@@ -210,7 +230,7 @@ header input{
 .homeWorkPlace{
     margin: 0 30px;
     border-radius: 15px;
-    height: 80%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -220,11 +240,12 @@ header input{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: fit-content;
-    padding: 10px;
+    width: 450px;
+    padding: 5px;
     border-radius: 15px;
     background-color: #FDFDFD;
     border: solid #dbdbdb 1px;
+    margin-bottom: 10px;
 }
 
 .objCount{
@@ -232,15 +253,113 @@ header input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 10px;
-    font-size: 0.9em;
+    margin: 0 5px;
+}
+.objCount p{
+    font-size: 0.8em;
+    color: #797979;
 }
 
 .objNum{
-    padding: 20px 50px;
-    margin: 10px;
-    font-size: 2em;
+    padding: 20px 40px;
+    margin: 5px;
+    font-size: 3em;
     border-radius: 15px;
     background-color: #fff;
+    transition: 250ms;
+}
+
+.objNum:hover{
+    transform: scale(1.015);
+    cursor: pointer;
+}
+
+.pending{
+    background-color: #FFD5A5;
+    color: #F3982E;
+}
+
+.done{
+    background-color: #B6F1A4;
+    color: #3EA91E;
+}
+
+.total{
+    background-color: #C9E7FF;
+    color: #4B92E4;
+}
+
+.dashCont{
     border: solid #dbdbdb 1px;
+    width: 450px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+}
+
+.dashContTitle{
+    font-size: 0.9em;
+    color: gray;
+    margin-left: 10px;
+}
+
+.objList{
+    height: 170px;
+    margin: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.objectiveCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 0.7em;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    transition: 250ms;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.objectiveCont:hover{
+    transform: scale(1.015);
+    cursor: pointer;
+}
+
+.colorCircle{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #4B92E4;
+}
+
+.projectList{
+    height: 120px;
+    margin: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.projectCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 0.7em;
+    background-color: #c96fd5;
+    border-radius: 10px;
+    transition: 250ms;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.projectCont:hover{
+    transform: scale(1.015);
+    cursor:pointer;
 }
