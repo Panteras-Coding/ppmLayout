@@ -1,26 +1,20 @@
 import React from "react";
 
 const ObjectiveStatus = () => {
+    let statusClassNames = ["pendientes", "cumplidos", "totales"]
+    let doneObj = 15
     return (
         <div className={"objectiveStatus"}>
-            <div className={"objCount"}>
-                <p>Objetivos pendientes</p>
-                <div className={"objNum pending"}>
-                    13
-                </div>
-            </div>
-            <div className={"objCount"}>
-                <p>Objetivos cumplidos</p>
-                <div className={"objNum done"}>
-                    15
-                </div>
-            </div>
-            <div className={"objCount"}>
-                <p>Objetivos totales</p>
-                <div className={"objNum total"}>
-                    28
-                </div>
-            </div>
+            {statusClassNames.map((item) => {
+                return (
+                    <div className={"objCount"}>
+                        <p>Objetivos {item}</p>
+                        <div className={`objNum ${item}`}>
+                            {doneObj}
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     );
 }
