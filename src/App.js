@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import SideBar from "./Components/Sidebar/SideBar";
 import Main from "./Components/Main/Main";
-import {BrowserRouter as Router} from 'react-router-dom'
+import {HashRouter as Router} from 'react-router-dom'
 
 const App = () =>{
     const [completeBar, setShowBar] = useState(false); //State hook to open or close sidebar

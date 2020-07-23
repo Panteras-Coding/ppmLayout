@@ -9,19 +9,16 @@ import Inbox from "./Views/Inbox";
 import Calendar from "./Views/Calendar";
 
 const WorkPlace = (props) => {
-
-    let home = <Dashboard />
     let containerClass = "homeWorkPlace"
     if(!props.indash){
-        home = ""
         containerClass = "workPlace"
     }
 
     return (
         <Switch>
             <div className={containerClass}>
-                <Route path="/">
-                    {home}
+                <Route path="/dashboard">
+                    <Dashboard />
                 </Route>
                 <Route path="/workplace">
                     <WorkTable />

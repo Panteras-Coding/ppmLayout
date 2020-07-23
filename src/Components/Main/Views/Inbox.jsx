@@ -2,9 +2,9 @@ import React from "react";
 
 const Inbox = () => {
     return(
-        <div>
+        <span>
             Este es el Inbox
-        </div>
+        </span>
     );
 }
 
