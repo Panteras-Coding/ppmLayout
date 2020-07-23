@@ -257,11 +257,28 @@ header input{
     border: none;
     transition: 250ms;
     background-color: #efefef;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em;
+    color: #585858;
 }
 .carpetBtn:hover{
-    transform: scale(1.01);
     cursor: pointer;
     background-color: #e5e5e5;
+}
+
+#workProject:hover{
+    cursor: pointer;
+    color: #585858;
+    font-weight: bold;
+}
+
+.actionIcon{
+    transition: 250ms;
+}
+.actionIcon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .workListCont{

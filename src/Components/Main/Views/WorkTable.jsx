@@ -1,49 +1,35 @@
-import React from "react";
-import WorkListItem from "./ViewComponents/WorkListItem";
+import React, {useState} from "react";
+import WorkTableNav from "./ViewComponents/WorkTableNav";
+import WorkList from "./ViewComponents/WorkList";
+import {
+    Switch,
+    Route,
+    useRouteMatch
+} from 'react-router-dom'
 
 const WorkTable = () => {
+    let match = useRouteMatch()
+    const [workPlaceIndex, changePlace] = useState(0);
+    let title = "Objetivos"
+    let plusLabel = "Objetivo"
+    if(workPlaceIndex === 1){
+        title = "Miembros"
+        plusLabel = "Miembro"
+    }
     return(
         <div style={{height: "100%",width: "100%", display:"flex",flexDirection: "column"}}>
-            <header>
-                <button className={"carpetBtn"} type={"button"}>Lista</button>
-                <button className={"carpetBtn"} type={"button"}>Miembros</button>
-                <button className={"carpetBtn"} type={"button"}>Calendario</button>
-                <button className={"carpetBtn"} type={"button"}>Gantt</button>
-                <button className={"carpetBtn"} type={"button"}>Tablón</button>
-                <button className={"carpetBtn"} type={"button"}>Árbol</button>
-            </header>
-            <div className={"workListCont"}>
-                <div className={"workTitleBar"}>
-                    <p>Objetivos de Agrupación, proyecto, área</p>
-                    <button className={"workTitleBtn"} type={"button"}>+ Agregar objetivo</button>
-                </div>
-                <hr/>
-                <div className={"objWorkList"}>
-                    <div className={"labelList"}>
-                        <p>Nombre</p>
-                        <p>#objetivos</p>
-                        <p>#miembros</p>
-                        <p>color</p>
-                        <p>acciones</p>
+            <WorkTableNav index={workPlaceIndex} changePlace={changePlace}/>
+            <Switch>
+                <div className={"workListCont"}>
+                    <div className={"workTitleBar"}>
+                        <p>{title} de Agrupación, proyecto, área</p>
+                        <button className={"workTitleBtn"} type={"button"}>+ Agregar {plusLabel}</button>
                     </div>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
-                    <WorkListItem/>
+                    <hr/>
+                    <Route path={`${match.path}/`} exact component={WorkList}/>
+
                 </div>
-            </div>
+            </Switch>
 
         </div>
     );

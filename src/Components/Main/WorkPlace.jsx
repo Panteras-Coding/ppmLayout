@@ -17,9 +17,7 @@ const WorkPlace = (props) => {
     return (
         <Switch>
             <div className={containerClass}>
-                <Route path="/dashboard">
-                    <Dashboard />
-                </Route>
+                <Route path="/" exact component={Dashboard}/>
                 <Route path="/workplace">
                     <WorkTable />
                 </Route>

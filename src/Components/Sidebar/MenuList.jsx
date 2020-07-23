@@ -16,7 +16,7 @@ const MenuList = (props) => {
     return (
         <ul>
             <Link
-                to="/dashboard"
+                to="/"
                 onClick={()=>props.notHome(true)}
                 className={"noUnder"}
             >

@@ -6,7 +6,7 @@ const WorkListItem = () => {
     return(
         <span>
             <div className={"objectiveWorkCont"}>
-                <p><FontAwesomeIcon
+                <p id={"workProject"}><FontAwesomeIcon
                     icon={faGreaterThan}
                     size={"1x"}
                     style={{ color: '#acacac',marginRight: "10px" }}
@@ -21,16 +21,19 @@ const WorkListItem = () => {
                         icon={faCog}
                         size={"2x"}
                         style={{ color: '#acacac',marginRight: "10px" }}
+                        className={"actionIcon"}
                     />
                     <FontAwesomeIcon
                         icon={faTrashAlt}
                         size={"2x"}
                         style={{ color: '#E18D8D',marginRight: "10px" }}
+                        className={"actionIcon"}
                     />
                     <FontAwesomeIcon
                         icon={faPlusCircle}
                         size={"2x"}
                         style={{ color: '#8bba8e' }}
+                        className={"actionIcon"}
                     />
                 </div>
             </div>
