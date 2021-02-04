@@ -7,9 +7,9 @@ const MenuList = (props) => {
     if(!props.status){
         closed = [
             <span>Dashboard</span>,
-            <span>Workplace</span>,
-            <span>Inbox</span>,
-            <span>Calendar</span>
+            <span>Mesa de trabajo</span>,
+            <span>Calendario</span>,
+            <span>Chat</span>
         ];
     }
 
