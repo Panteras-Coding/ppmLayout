@@ -60,7 +60,7 @@ hr{
     height: 100vh;
     float: left;
     position: absolute;
-    background-color: #912D2D;
+    background-color: #6E0000;
     border-radius: 0 15px 15px 0;
     transition: 250ms;
     display: flex;
@@ -68,7 +68,7 @@ hr{
 }
 
 .sbOpened{
-    width: 200px;
+    width: 230px;
 }
 
 .sbClosed{
@@ -97,7 +97,7 @@ hr{
 }
 
 .listContainer img{
-    width: 50px;
+    width: 25px;
 }
 
 .sideBar li{
@@ -123,7 +123,7 @@ hr{
 .listContainer{
     width: 100%;
     flex-grow : 1;
-    background-color: #7D2222;
+    background-color: #851313;
     border-radius: 0 50px 15px 0;
     padding: 20px 0;
     display: flex;
@@ -147,7 +147,7 @@ hr{
 .profileImgNormal{
     width: 100px;
     transition: 250ms;
-    border-radius: 25%;
+    border-radius: 50%;
     box-shadow: 0 2px 5px #ef6d6d;
 }
 .profileImgSmall{
@@ -169,7 +169,7 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #912D2D;
+    background-color: #921414;
     border-radius: 10px;
     padding: 5px;
     margin: 25px 10px;
@@ -210,7 +210,7 @@ hr{
 }
 
 .incomplete{
-    margin-left: 200px;
+    margin-left: 230px;
 }
 
 .main header{

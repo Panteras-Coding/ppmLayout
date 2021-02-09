@@ -7,7 +7,6 @@ const InfoBox = (props) => {
     if(!props.status){
         dataLink = (
             <div className={"dataCont"}>
-                <p>Legal</p>
                 <p>Aviso de privacidad</p>
                 <p>Contacto</p>
             </div>
