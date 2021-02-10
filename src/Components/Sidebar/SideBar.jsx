@@ -2,8 +2,6 @@ import React from 'react';
 import MenuList from "./MenuList";
 import UserSpace from "./UserSpace";
 import InfoBox from "./InfoBox";
-import Footer from "./Footer";
-
 const SideBar = (props) => {
     let currentClassName = "sideBar sbOpened"
     if(props.status) {
@@ -20,7 +18,6 @@ const SideBar = (props) => {
                     notHome={props.notHome}
                 />
                 <InfoBox status={props.status}/>
-                <Footer/>
             </div>
 
         </div>

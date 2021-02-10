@@ -169,10 +169,12 @@ hr{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #921414;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 25px 10px;
+    background-color: #6E0000;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 15px;
+    position:relative;
+    top: 70px;
 }
 
 .dataCont{
@@ -185,16 +187,7 @@ hr{
 
 .dataCont p{
     margin: 2px 0;
-    color: #E88282;
-}
-.sideBar footer{
-    font-size: 0.6em;
-    color: #E88282;
-    position: absolute;
-    text-align: center;
-    height: 2.5rem;
-    width: 100%;
-    bottom: 0;
+    color: white;
 }
 
 /*__________Main__________*/
