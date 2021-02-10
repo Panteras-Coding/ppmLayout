@@ -21,7 +21,7 @@ const MenuList = (props) => {
                 className={"noUnder"}
             >
                 <li>
-                    <img alt={"Icon"} src={require('../../Assets/home.png')}/>
+                    <img alt={"Icon"} src={require('../../Assets/door-key.svg')}/>
                     {closed[0]}
                 </li>
             </Link>
