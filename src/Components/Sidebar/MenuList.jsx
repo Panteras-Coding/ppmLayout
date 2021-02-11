@@ -21,7 +21,7 @@ const MenuList = (props) => {
                 className={"noUnder"}
             >
                 <li>
-                    <img alt={"Icon"} src={require('../../Assets/dashboard.png')}/>
+                    <img alt={"Icon"} src={require('../../Assets/Dashboard.svg')}/>
                     {closed[0]}
                 </li>
             </Link>
@@ -31,7 +31,7 @@ const MenuList = (props) => {
                 className={"noUnder"}
             >
                 <li>
-                    <img alt={"Icon2"} src={require('../../Assets/workplace.png')}/>
+                    <img alt={"Icon2"} src={require('../../Assets/monitor.svg')}/>
                     {closed[1]}
                 </li>
             </Link>
@@ -41,7 +41,7 @@ const MenuList = (props) => {
                 className={"noUnder"}
             >
                 <li>
-                    <img alt={"Icon3"} src={require('../../Assets/inbox.png')}/>
+                    <img alt={"Icon3"} src={require('../../Assets/calendario.svg')}/>
                     {closed[2]}
                 </li>
             </Link>
@@ -51,7 +51,7 @@ const MenuList = (props) => {
                 className={"noUnder"}
             >
                 <li>
-                    <img alt={"Icon4"} src={require('../../Assets/calendar.png')}/>
+                    <img alt={"Icon4"} src={require('../../Assets/Mensaje.svg')}/>
                     {closed[3]}
                 </li>
             </Link>

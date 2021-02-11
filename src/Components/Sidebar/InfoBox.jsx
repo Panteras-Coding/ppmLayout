@@ -16,7 +16,7 @@ const InfoBox = (props) => {
     return(
         <div className={"infoBox"}>
             {dataLink}
-            <img alt={"Logo Panteras"} src={require("../../Assets/LOGO_Blanco.png")}/>
+            <img alt={"Logo Panteras"} src={require("../../Assets/upanterasblanco.svg")}/>
         </div>
     );
 }
