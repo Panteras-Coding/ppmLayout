@@ -483,3 +483,80 @@ header input{
     transform: scale(1.015);
     cursor:pointer;
 }
+.userActions {
+    background-color: #FDFDFD !important;
+    color: grey !important;
+    border-radius: 25px;
+    padding: 2rem;
+    padding-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 2px 5px grey;
+        padding-bottom: 3.2rem;
+        margin-left: -0.8rem;
+        border-color: #ff0 transparent transparent transparent;
+
+} 
+
+.userActions:after {
+        content:"";
+        border-color: white white transparent transparent;
+        border-style:solid;
+        border-width:2rem;
+        width:0;
+        height:0;
+        position:absolute;
+        top:40px;
+        left:-40px
+}
+
+
+.userActions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 25px;
+    white-space:nowrap; 
+
+}
+.userActions li{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    transition: 250ms;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 0;
+    color: grey !important;
+    font-size: 0.9em;
+}
+
+.userActions li:hover{
+    cursor: pointer;
+    color: grey !important;
+    transform: scale(1.01);
+    box-shadow: none !important;
+}
+
+.userActions .icon{
+    width: 25px;
+    margin: 0.8rem;
+}
+
+.userActions .header {
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+}
+.userActions .header p{
+    color: grey !important
+}
+
+hr {
+    color: grey
+}
