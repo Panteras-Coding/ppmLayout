@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/ppmLayout/static/css/main.679fed44.chunk.css",
-    "main.js": "/ppmLayout/static/js/main.c179c387.chunk.js",
-    "main.js.map": "/ppmLayout/static/js/main.c179c387.chunk.js.map",
+    "main.css": "/ppmLayout/static/css/main.69be73f8.chunk.css",
+    "main.js": "/ppmLayout/static/js/main.67a57774.chunk.js",
+    "main.js.map": "/ppmLayout/static/js/main.67a57774.chunk.js.map",
     "runtime-main.js": "/ppmLayout/static/js/runtime-main.eeb9f2f8.js",
     "runtime-main.js.map": "/ppmLayout/static/js/runtime-main.eeb9f2f8.js.map",
-    "static/js/2.2bb39c72.chunk.js": "/ppmLayout/static/js/2.2bb39c72.chunk.js",
-    "static/js/2.2bb39c72.chunk.js.map": "/ppmLayout/static/js/2.2bb39c72.chunk.js.map",
+    "static/js/2.dff2eb05.chunk.js": "/ppmLayout/static/js/2.dff2eb05.chunk.js",
+    "static/js/2.dff2eb05.chunk.js.map": "/ppmLayout/static/js/2.dff2eb05.chunk.js.map",
     "index.html": "/ppmLayout/index.html",
-    "precache-manifest.753866788919dc0285313d6924170fc5.js": "/ppmLayout/precache-manifest.753866788919dc0285313d6924170fc5.js",
+    "precache-manifest.90e66b0227b77956ffeb2fe4054ffa24.js": "/ppmLayout/precache-manifest.90e66b0227b77956ffeb2fe4054ffa24.js",
     "service-worker.js": "/ppmLayout/service-worker.js",
-    "static/css/main.679fed44.chunk.css.map": "/ppmLayout/static/css/main.679fed44.chunk.css.map",
-    "static/js/2.2bb39c72.chunk.js.LICENSE.txt": "/ppmLayout/static/js/2.2bb39c72.chunk.js.LICENSE.txt",
+    "static/css/main.69be73f8.chunk.css.map": "/ppmLayout/static/css/main.69be73f8.chunk.css.map",
+    "static/js/2.dff2eb05.chunk.js.LICENSE.txt": "/ppmLayout/static/js/2.dff2eb05.chunk.js.LICENSE.txt",
+    "static/media/Coding.svg": "/ppmLayout/static/media/Coding.6d2b8c35.svg",
     "static/media/Dashboard.svg": "/ppmLayout/static/media/Dashboard.19512b0f.svg",
     "static/media/Mensaje.svg": "/ppmLayout/static/media/Mensaje.85b6c4bc.svg",
+    "static/media/businessman.svg": "/ppmLayout/static/media/businessman.4e376a23.svg",
     "static/media/calendario.svg": "/ppmLayout/static/media/calendario.e550852a.svg",
     "static/media/door-key.svg": "/ppmLayout/static/media/door-key.f9fe04b5.svg",
     "static/media/edit.svg": "/ppmLayout/static/media/edit.3e4d12ee.svg",
@@ -25,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eeb9f2f8.js",
-    "static/js/2.2bb39c72.chunk.js",
-    "static/css/main.679fed44.chunk.css",
-    "static/js/main.c179c387.chunk.js"
+    "static/js/2.dff2eb05.chunk.js",
+    "static/css/main.69be73f8.chunk.css",
+    "static/js/main.67a57774.chunk.js"
   ]
 }
