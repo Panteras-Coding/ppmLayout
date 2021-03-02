@@ -3,11 +3,11 @@ import {Link, useRouteMatch} from "react-router-dom";
 
 const WorkTableNav = (props) => {
     let match = useRouteMatch();
-    let backColors = ["#dde7f3","#F5D4D4"]
-    let carpets = ["#efefef","#efefef"]
+    let backColors = ["#A3E1EE", "#A3EEC3", "#EED5A3", "#E9A3EE", "#EEA3A3"]
+    let carpets = ["#A3E1EE", "#A3EEC3", "#EED5A3", "#E9A3EE", "#EEA3A3"]
     carpets[props.index] = backColors[props.index]
     return (
-        <header>
+        <div className={"workTableList"}>
             <Link
                 to={`${match.url}/`}
                 onClick={() => props.changePlace(0)}
@@ -17,18 +17,38 @@ const WorkTableNav = (props) => {
                 Lista
             </Link>
             <Link
-                to={`${match.url}/members`}
+                to={`${match.url}/`}
                 onClick={() => props.changePlace(1)}
                 className={"carpetBtn"}
                 style={{backgroundColor: carpets[1]}}
             >
-                Miembros
+                Gantt
             </Link>
-            <button className={"carpetBtn"} type={"button"}>Calendario</button>
-            <button className={"carpetBtn"} type={"button"}>Gantt</button>
-            <button className={"carpetBtn"} type={"button"}>Tablón</button>
-            <button className={"carpetBtn"} type={"button"}>Árbol</button>
-        </header>
+            <Link
+                to={`${match.url}/`}
+                onClick={() => props.changePlace(2)}
+                className={"carpetBtn"}
+                style={{backgroundColor: carpets[2]}}
+            >
+                Calendario
+            </Link>
+            <Link
+                to={`${match.url}/`}
+                onClick={() => props.changePlace(3)}
+                className={"carpetBtn"}
+                style={{backgroundColor: carpets[3]}}
+            >
+                Diagrama
+            </Link>
+            <Link
+                to={`${match.url}/`}
+                onClick={() => props.changePlace(4)}
+                className={"carpetBtn"}
+                style={{backgroundColor: carpets[4]}}
+            >
+                Árbol
+            </Link>
+        </div>
     );
 }
 
