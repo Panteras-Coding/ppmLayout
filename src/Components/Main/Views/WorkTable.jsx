@@ -17,19 +17,24 @@ const WorkTable = () => {
         plusLabel = "Miembro"
     }
     return(
-        <div style={{height: "100%",width: "100%", display:"flex",flexDirection: "column"}}>
-            <WorkTableNav index={workPlaceIndex} changePlace={changePlace}/>
-            <Switch>
-                <div className={"workListCont"}>
-                    <div className={"workTitleBar"}>
-                        <p>{title} de Agrupación, proyecto, área</p>
-                        <button className={"workTitleBtn"} type={"button"}>+ Agregar {plusLabel}</button>
-                    </div>
-                    <hr/>
-                    <Route path={`${match.path}/`} exact component={WorkList}/>
+        <div style={{height: "85%",width: "100%", display:"flex",flexDirection: "column"}}>
+            
+                <button className={"workFilterBtn"} type={"button"}>Filtrar:   Por equipo</button>
+            
+            <div className={"workTableCard"}>
+                <WorkTableNav className={"workTableLink"} index={workPlaceIndex} changePlace={changePlace}/>           
+                <Switch>
+                    <div className={"workListCont"}>
+                        <div className={"workTitleBar"}>
+                            <p>{title} de Agrupación, proyecto, área</p>
+                            <button className={"workTitleBtn"} type={"button"}>+ Agregar {plusLabel}</button>
+                        </div>
+                        <hr/>
+                        {/*<Route path={`${match.path}/`} exact component={WorkList}/>*/}
 
-                </div>
-            </Switch>
+                    </div>
+                </Switch>
+            </div>
 
         </div>
     );
