@@ -5,7 +5,10 @@ const Header = (props) => {
     return (
         <header>
             <h3>Buen día, <span>{firstName}</span></h3>
-            <input type={"text"} name={"searchbox"} placeholder={"Buscar..."}/>
+            <div id="inputFind">
+                <input type={"text"} className="inputT" name={"searchbox"} placeholder={"Buscar"}/>
+                <img src={require('../../Assets/Buscar.svg')} id="inputImg"/>
+            </div>
         </header>
     );
 }
