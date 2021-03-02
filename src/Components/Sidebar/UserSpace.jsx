@@ -30,7 +30,7 @@ const UserSpace = (props) => {
                             content={content}
                         />
                 </div>
-                <button
+                <button id="btnUser"
                     onClick={() => setModal(!modal)}
                     style={{
                         borderRadius: '50%'
