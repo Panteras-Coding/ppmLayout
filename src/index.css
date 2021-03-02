@@ -404,25 +404,29 @@ header input{
     flex-direction: column;
     flex-wrap: wrap;
 }
-
+/*____Objective/Nivel___*/
 .objectiveStatus{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 450px;
+    width: 188px;
     padding: 5px;
     border-radius: 15px;
     background-color: #FDFDFD;
     border: solid #dbdbdb 1px;
+    box-shadow: 1px 1px 3px #999;
     margin-bottom: 10px;
 }
 
 .objCount{
+    background-color: #F7F7F7;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 5px;
+    margin: 5px 9px;
+    width: inherit;
 }
 .objCount p{
     font-size: 0.8em;
@@ -430,9 +434,9 @@ header input{
 }
 
 .objNum{
-    padding: 20px 40px;
-    margin: 5px;
-    font-size: 3em;
+    padding: 7px 10px;
+    margin: 7px;
+    font-size: 2em;
     border-radius: 15px;
     background-color: #fff;
     transition: 250ms;
@@ -443,19 +447,14 @@ header input{
     cursor: pointer;
 }
 
-.pendientes{
-    background-color: #FFD5A5;
-    color: #F3982E;
+.Nivel{
+    background-color: #C186C5;
+    color: white;
 }
 
-.cumplidos{
-    background-color: #B6F1A4;
-    color: #3EA91E;
-}
-
-.totales{
-    background-color: #C9E7FF;
-    color: #4B92E4;
+.Objetivos{
+    background-color: #FF7575;
+    color: white;
 }
 
 .dashCont{
