@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectList = () => {
     return (
-        <div className={"dashCont"} >
+        <div className={"dashContProj"} >
             <p className={"dashContTitle"}>Mis proyectos</p>
             <div className={"projectList"}>
                 <div className={"projectCont"}>

@@ -8,9 +8,9 @@ function Login(props){
             <div className="form-container sign-in-container">
                 <div className="overlay">
                     <div className="overlay-panel overlay-right">
-                        <h1>Bienvenido a Panteras Project Management</h1>
+                        <h1>Bienvenido a Panteras PM<sup>[ING]</sup></h1>
                         <p>Si tienes problemas para acceder a tu cuenta, contáctanos</p>
-                        <img alt={"Logo Panteras"} src={require("../../Assets/Coding.svg")}/>
+                        <img alt={"Logo Panteras"} src={require("../../Assets/Coding[ING].svg")}/>
                     </div>
                 </div>
             </div>

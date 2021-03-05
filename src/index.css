@@ -405,8 +405,6 @@ header input{
     
 }
 
-
-
 .objWorkList{
     height:75%;
     margin: 10px;
@@ -486,6 +484,7 @@ header input{
     transition: 250ms;
 }
 
+
 .objNum:hover{
     transform: scale(1.015);
     cursor: pointer;
@@ -500,21 +499,48 @@ header input{
     background-color: #FF7575;
     color: white;
 }
-
+/*___Widgets___*/
 .dashCont{
     border: solid #dbdbdb 1px;
-    width: 450px;
+    width: 300px;
     height: auto;
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 15px;
     background-color: #FDFDFD;
+    box-shadow: 1px 1px 2px #999;
 }
 
 .dashContTitle{
     font-size: 0.9em;
     color: gray;
     margin-left: 10px;
+}
+
+/*___Mis Objetivos__-*/
+.numObj{
+    display: flex;
+    justify-content: space-between;
+}
+
+.numObj span {
+    background-color: #E2E2E2;
+    color: #9C9C9C;
+    border-radius: 20%;
+    margin-right: 15px;
+    text-align: center;
+    width: 20px;
+}
+
+.objBtn {
+    background-color: #E2E2E2;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #999;
+    color: #7E7E7E;
+    margin: 1px 0 0 7px;
+    padding: 5px;
+    width: fit-content;
 }
 
 .objList{
@@ -531,11 +557,11 @@ header input{
     justify-content: space-evenly;
     padding: 10px;
     font-size: 0.7em;
-    background-color: #F6F6F6;
+    background-color: #4C98DA;
     border-radius: 10px;
     transition: 250ms;
     margin-bottom: 10px;
-    color: gray;
+    color: white;
 }
 
 .objectiveCont:hover{
@@ -543,12 +569,16 @@ header input{
     cursor: pointer;
 }
 
-.colorCircle{
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    background-color: #4B92E4;
-    margin: auto;
+/*___Mis proyectos___*/
+.dashContProj{
+    border: solid #dbdbdb 1px;
+    width: 430px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+    box-shadow: 1px 1px 2px #999;
 }
 
 .projectList{
@@ -565,7 +595,7 @@ header input{
     justify-content: space-evenly;
     padding: 10px;
     font-size: 0.7em;
-    background-color: #c96fd5;
+    background-color: #DA4C4C;
     border-radius: 10px;
     transition: 250ms;
     margin-bottom: 10px;
@@ -830,6 +860,11 @@ hr {
 .overlay-right {
 	right: 0;
 	transform: translateX(0);
+}
+
+.overlay-right sup {
+	font-size: small;
+    font-weight: normal;
 }
 
 .overlay-right img{

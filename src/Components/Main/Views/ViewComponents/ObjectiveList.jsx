@@ -1,45 +1,44 @@
 import React from "react";
 
 const ObjectiveList = () => {
+    let nObj = 13;
     return (
         <div className={"dashCont"}>
-            <p className={"dashContTitle"}>Mis Objetivos</p>
+            <div className={"numObj"}>
+                <p className={"dashContTitle"}>Mis Objetivos</p>
+                <span>{nObj}</span>
+            </div>
+            <button className={"objBtn"} type={"button"}>Filtrar: Por importancia</button>
             <div className={"objList"}>
                 <div className={"objectiveCont"}>
-                    <p>Objetivo</p>
+                    <p>Nombre</p>
                     <p>Fecha de entrega</p>
                     <p>Equipo</p>
-                    <div className={"colorCircle"}></div>
                 </div>
                 <div className={"objectiveCont"}>
-                    <p>Objetivo</p>
+                    <p>Nombre</p>
                     <p>Fecha de entrega</p>
                     <p>Equipo</p>
-                    <div className={"colorCircle"}></div>
                 </div>
                 <div className={"objectiveCont"}>
-                    <p>Objetivo</p>
+                    <p>Nombre</p>
                     <p>Fecha de entrega</p>
                     <p>Equipo</p>
-                    <div className={"colorCircle"}></div>
                 </div>
                 <div className={"objectiveCont"}>
-                    <p>Objetivo</p>
+                    <p>Nombre</p>
                     <p>Fecha de entrega</p>
                     <p>Equipo</p>
-                    <div className={"colorCircle"}></div>
                 </div>
                 <div className={"objectiveCont"}>
-                    <p>Objetivo</p>
+                    <p>Nombre</p>
                     <p>Fecha de entrega</p>
                     <p>Equipo</p>
-                    <div className={"colorCircle"}></div>
                 </div>
                 <div className={"objectiveCont"}>
-                    <p>Objetivo</p>
+                    <p>Nombre</p>
                     <p>Fecha de entrega</p>
                     <p>Equipo</p>
-                    <div className={"colorCircle"}></div>
                 </div>
             </div>
         </div>
