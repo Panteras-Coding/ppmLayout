@@ -2,6 +2,9 @@ import React from "react";
 import ObjectiveStatus from "./ViewComponents/ObjectiveStatus";
 import ObjectiveList from "./ViewComponents/ObjectiveList";
 import ProjectList from "./ViewComponents/ProjectList";
+import MessagesList from "./ViewComponents/MessagesList";
+import EventList from "./ViewComponents/EventsList";
+import ActivitiesList from "./ViewComponents/ActivitiesList";
 
 const Dashboard = () => {
     return(
@@ -10,6 +13,9 @@ const Dashboard = () => {
             <ObjectiveStatus/>
             <ObjectiveList/>
             <ProjectList/>
+            <EventList/>
+            <MessagesList/>
+            <ActivitiesList/>
         </>
     );
 }

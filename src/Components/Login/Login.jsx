@@ -18,8 +18,8 @@ function Login(props){
             <div className="overlay-container">
                 <form action="#">
                     <img alt={"Logo Panteras"} src={require("../../Assets/businessman.svg")}/>
-                    <input type="email" placeholder="Usuario" />
-                    <input type="password" placeholder="Contraseña" />
+                    <input id="user" type="email" placeholder="Usuario"/>
+                    <input id="pwd" type="password" placeholder="Contraseña" />
                     <button onClick={props.changeLog}>Login</button>
                 </form>
             </div>
