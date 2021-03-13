@@ -36,7 +36,7 @@ const MenuList = (props) => {
                 </li>
             </Link>
             <Link
-                to="/inbox"
+                to="/calendar"
                 onClick={()=>props.notHome(false)}
                 className={"noUnder"}
             >
@@ -46,7 +46,7 @@ const MenuList = (props) => {
                 </li>
             </Link>
             <Link
-                to="/calendar"
+                to="/inbox"
                 onClick={()=>props.notHome(false)}
                 className={"noUnder"}
             >

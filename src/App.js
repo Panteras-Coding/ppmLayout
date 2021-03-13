@@ -3,6 +3,7 @@ import SideBar from "./Components/Sidebar/SideBar";
 import Main from "./Components/Main/Main";
 import Login from "./Components/Login/Login";
 import {HashRouter as Router} from 'react-router-dom'
+import DateProvider from './context/CalendarContext';
 
 const App = () =>{
 
@@ -14,6 +15,7 @@ const App = () =>{
     if (isLoggedIn === true)
     {
         return (
+            <DateProvider>
             <Router>
                 <div>
                     <SideBar
@@ -29,6 +31,7 @@ const App = () =>{
                     />
                 </div>
             </Router>
+            </DateProvider>
         );
     }
     else{
