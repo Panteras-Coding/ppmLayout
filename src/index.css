@@ -731,6 +731,112 @@ header input{
     cursor:pointer;
 }
 
+/*___Mis recordatorios___*/
+.dashContReminder{
+    border: solid #dbdbdb 1px;
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #FDFDFD;
+    box-shadow: 1px 1px 2px #999;
+}
+
+.numReminder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.numReminder span {
+    background-color: #E2E2E2;
+    color: #9C9C9C;
+    border-radius: 20%;
+    margin-right: 15px;
+    text-align: center;
+    width: 20px;
+}
+
+.reminderList{
+    height: 80px;
+    margin: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.reminderCont1{
+    width: 200px;
+    align-items: center;
+    background-color: #4C98DA;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #999;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-size: 0.7em;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px;
+    transition: 250ms;
+}
+
+.reminderCont2{
+    width: 200px;
+    align-items: center;
+    background-color: #DA4C4C;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #999;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-size: 0.7em;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px;
+    transition: 250ms;
+}
+
+.reminderCont3{
+    width: 200px;
+    align-items: center;
+    background-color: #86FF68;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #999;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-size: 0.7em;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px;
+    transition: 250ms;
+}
+
+.reminderCont4{
+    width: 200px;
+    align-items: center;
+    background-color: #5D55A5;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #999;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    font-size: 0.7em;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px;
+    transition: 250ms;
+}
+
+.reminderCont1:hover{
+    transform: scale(1.015);
+    cursor:pointer;
+}
+
 /*___Actividades___*/
 .dashContAct{
     background-color: #A72E2E;

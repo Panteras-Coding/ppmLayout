@@ -5,6 +5,7 @@ import ProjectList from "./ViewComponents/ProjectList";
 import MessagesList from "./ViewComponents/MessagesList";
 import EventList from "./ViewComponents/EventsList";
 import ActivitiesList from "./ViewComponents/ActivitiesList";
+import ReminderList from "./ViewComponents/ReminderList";
 
 const Dashboard = () => {
     return(
@@ -12,6 +13,7 @@ const Dashboard = () => {
             <button className={"widgetsBtn"} type={"button"}><img  id="iconMenu" alt={"Icon"} src={require('../../../Assets/menu.svg')} /><p>Configurar Widgets</p></button>
             <ObjectiveStatus/>
             <ObjectiveList/>
+            <ReminderList/>
             <ProjectList/>
             <EventList/>
             <MessagesList/>
