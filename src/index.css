@@ -16,7 +16,7 @@ button{
 body{
     background : #f5f5f5;
     margin:0;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 h3{
@@ -1150,3 +1150,194 @@ hr {
 .overlay-right img{
 	width: 150px;
 }
+
+.calendar {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+   
+}
+
+.weekdaysHeader {
+    display: grid;
+    grid-auto-rows: minmax(0,1fr);
+    grid-template-columns: repeat(7,minmax(0,1fr));
+    width: 100%;
+    overflow-y: auto;
+    padding: 0;
+    padding-top: 0;
+    flex-grow: 1;
+    display: grid;
+    color: #851313;
+}
+
+.weekdaysHeader2 {
+    display: grid;
+    grid-auto-rows: minmax(0,1fr);
+    grid-template-columns: repeat(8,minmax(0,1fr));
+    width: 100%;
+    overflow-y: auto;
+    padding: 0;
+    padding-top: 0;
+    flex-grow: 1;
+    display: grid;
+    color: #851313;
+}
+
+
+.weekdaysHeader li {
+    border: 1px solid #851313;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    white-space: nowrap;
+    list-style: none;
+    text-transform: capitalize;
+}
+.weekdaysHeader2 li {
+    border: 1px solid #851313;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    white-space: nowrap;
+    list-style: none;
+    text-transform: capitalize;
+}
+.calendarGrid{
+    grid-auto-rows: minmax(0,1fr);
+    grid-template-columns: repeat(7,minmax(0,1fr));
+    width: 100%;
+    overflow-y: auto;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: .25rem;
+    flex-grow: 1;
+    display: grid;
+    color: black;
+}
+
+.hoursGrid{
+    grid-auto-columns: minmax(0,1fr);
+    grid-template-rows: repeat(7,minmax(0,1fr));
+    width: 100%;
+    overflow-y: auto; 
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: .25rem;
+    flex-grow: 1;
+    display: grid;
+    color: black;
+}
+
+.calendarGrid li {
+    border: 1px solid #851313;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: right;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.hoursGrid li{
+    border: 1px solid grey;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: left;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.finDeSemana {
+    color:#851313 !important;
+    font-weight: bolder;
+}
+
+.deOtroMes {
+    color:grey !important;
+
+}
+
+.calendarHeader {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    grid-gap: 1rem;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.fecha {
+    text-align: center;
+    color:#851313;
+    margin: 0 auto;
+}
+
+.toggler{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    font-size: 0.8em;
+    background-color: #DA4C4C;
+    transition: 250ms;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.toggler:hover{
+    transform: scale(1.015);
+    cursor:pointer;
+}
+
+.activo {
+    background-color: #851313 !important;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 10px;
+
+}
+
+.inactivo {
+    background-color: #DA4C4C!important;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 10px;
+
+}
+
+.toLeft {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 10px;
+}
+
+.toRight {
+    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 10px;
+}
+

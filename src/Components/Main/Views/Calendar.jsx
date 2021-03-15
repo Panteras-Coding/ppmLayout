@@ -1,10 +1,16 @@
 import React from "react";
+import { getWeekdaysDescriptions } from "../../../config/dates";
+import CalendarGrid from "./ViewComponents/CalendarGrid";
+import CalendarHeader from "./ViewComponents/CalendarHeader";
 
+const weekDays = getWeekdaysDescriptions();
 const Calendar = () => {
-    return(
-        <span>
-            Este es el calendario
-        </span>
+  
+    return (
+        <div className={"calendar"}>
+            <CalendarHeader weekDays={weekDays} />
+            <CalendarGrid /> 
+        </div>
     );
 }
 
