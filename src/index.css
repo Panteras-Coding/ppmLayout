@@ -63,7 +63,7 @@ hr{
 /*__________Side bar menu__________*/
 
 .sideBar{
-    height: 100vh;
+    height: 100%;
     float: left;
     position: absolute;
     background-color: #6E0000;
@@ -210,7 +210,7 @@ hr{
 
 .main{
     background-color: white;
-    height: 100vh;
+    height: 97vh;
     transition: 250ms;
 }
 
@@ -287,11 +287,10 @@ header input{
 }
 
 .workPlace{
-    margin: 0 30px;
+    margin: 0 40px;
     border-radius: 15px;
     background-color: #FDFDFD;
     height: 85%;
-    border: solid #dbdbdb 1px;
 }
 
 .workPlace header{
@@ -445,7 +444,9 @@ header input{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
 }
+
 /*____Objective/Nivel___*/
 .objectiveStatus{
     display: flex;
@@ -1341,3 +1342,143 @@ hr {
     border-radius: 10px;
 }
 
+/* _______ Chat _______*/
+
+/*Siderbar right*/
+
+#sidebarRight {
+    width: 330px;
+    position: absolute;
+    height: 85vh;
+    z-index: 999;
+    left: 78%;
+    background: #D34444;
+    color: #fff;
+    border-radius: 15px 0 0 15px;
+    overflow-y: scroll;
+}
+
+#sidebarRight h3 {
+    color: white;
+    margin-left: 20px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+  
+.react-tabs__tab {
+    display: inline-block;
+    margin: 20px 7% 10px 7%;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+ 
+.react-tabs__tab-list {
+    padding: 0;
+}
+
+.react-tabs__tab--selected {
+    color: white;
+    background: inherit;
+    border-bottom: 2px solid;
+}
+
+.conversation-item:hover {
+    cursor: pointer;
+    background:#e97171;
+}
+
+.conversation-item img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.conversation-item .timeMss{
+    float: right;
+    padding-left: 0;
+    padding-right: 18px;
+    font-size: 12px;
+}
+
+.conversation-item h5{
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.conversation-item p{
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.conversation-item hr{
+    margin-top: 20px;
+    padding: 0.1px;
+}
+
+#newChatBtn {
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    bottom: 20px;
+    left:250px;
+    background-color: transparent;
+    border: none;
+}
+
+#newChatBtn:hover{
+    cursor: pointer;
+}
+
+/*Chat container*/
+
+#chat-container {
+    position: relative;
+    height: 85vh;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+    background: #FFF;
+    width: 72%;
+}
+
+#new-message-container {
+    position: relative;
+    margin-top: 78.2vh;
+    background: #f4f4f2;
+    border-radius: 15px;
+    width: 100%;
+}
+
+#chat-form {
+    padding-right: 12px;
+    padding-left: 12px;
+    width: inherit;
+}
+
+#chat-form input{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background: #dddddd;
+    width: 81%;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+#chat-form input:focus {
+    outline: none;
+}
+
+#chat-form img{
+    position: relative;
+    width: 30px;
+    top: 25%;
+    margin: 0 21px 0 0;
+    top: 10px;
+}
