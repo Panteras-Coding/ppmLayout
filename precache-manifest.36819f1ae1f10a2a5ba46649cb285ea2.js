@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "783a314a61bdfc83ec63a176a9a0cf2c",
+    "revision": "d310abd4581fe7894679cd8fb5db7c67",
     "url": "/ppmLayout/index.html"
   },
   {
-    "revision": "38511ba02c12cac74059",
-    "url": "/ppmLayout/static/css/main.0cb2f3e3.chunk.css"
+    "revision": "71ebfad2d5a58f1ed776",
+    "url": "/ppmLayout/static/css/main.d24839c3.chunk.css"
   },
   {
-    "revision": "24184841456632338150",
-    "url": "/ppmLayout/static/js/2.d735db9e.chunk.js"
+    "revision": "29880ed343aab2738d7a",
+    "url": "/ppmLayout/static/js/2.89f2f36e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/ppmLayout/static/js/2.d735db9e.chunk.js.LICENSE.txt"
+    "url": "/ppmLayout/static/js/2.89f2f36e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38511ba02c12cac74059",
-    "url": "/ppmLayout/static/js/main.5f9c31ce.chunk.js"
+    "revision": "71ebfad2d5a58f1ed776",
+    "url": "/ppmLayout/static/js/main.99d9d69c.chunk.js"
   },
   {
     "revision": "2586b0ca4572ac82fada",
@@ -50,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e550852ab8e084b094bc1456f4e60417",
     "url": "/ppmLayout/static/media/calendario.e550852a.svg"
+  },
+  {
+    "revision": "0b563b4361153af9c9c4532a12f2962c",
+    "url": "/ppmLayout/static/media/circle-check.0b563b43.svg"
+  },
+  {
+    "revision": "8c993c378543deaebc8a914c118dc724",
+    "url": "/ppmLayout/static/media/clip-de-papel.8c993c37.svg"
   },
   {
     "revision": "dd4595c74703b73b3128b399b52b5163",
@@ -86,6 +94,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "22acbbfe3d7d9ce42dc42ed06f3e66f7",
     "url": "/ppmLayout/static/media/monitor.22acbbfe.svg"
+  },
+  {
+    "revision": "86d3097736b2b027be794361c1fcbd6d",
+    "url": "/ppmLayout/static/media/plus.86d30977.svg"
   },
   {
     "revision": "e78e0ef845466ca00148caaabb2db941",
