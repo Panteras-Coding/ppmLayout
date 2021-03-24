@@ -1037,12 +1037,37 @@ hr {
 }
 
 .mainContainerLogin input {
-	background-color: #eee;
-	border: none;
-    border-radius: 10px;
-	padding: 12px 15px;
+	border: 2px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+	padding: 8px;
 	margin: 8px 0;
+    outline: none;
+    transition: .3s;
 	width: 100%;
+}
+
+.mainContainerLogin input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0;
+}
+
+.idIcon input {
+    padding-left: 40px;
+}
+
+.idIcon {
+    position: relative;
+}
+
+.overlay-container .idIcon img {
+    position: absolute;
+    color: #aaa;
+    left: 0;
+    padding: 9px 8px;
+    transition: .3s;
+    top: 8px;
+    width: 15%;
 }
 
 .mainContainerLogin .container {
@@ -1152,6 +1177,215 @@ hr {
 	width: 150px;
 }
 
+/*____ Registration ____ */
+  .mainContainerRegister * {
+    box-sizing: border-box;
+  }
+  
+  .mainContainerRegister {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+  }
+  
+  .mainContainerRegister h1 {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .mainContainerRegister h2 {
+    text-align: center;
+  }
+  
+  .mainContainerRegister p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+    text-align: center;
+  }
+  
+  .mainContainerRegister span {
+    font-size: 12px;
+  }
+  
+  .mainContainerRegister a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+  }
+  
+  .mainContainerRegister button {
+    border-radius: 15px;
+    border: none;
+    background-color: #851313;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    left: 35%;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    width: 40%;
+    height: 30px;
+  }
+  
+  .mainContainerRegister button:active {
+    transform: scale(0.95);
+  }
+  
+  .mainContainerRegister input {
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 8px 6px;
+    width: 45%;
+  }
+  
+  .mainContainerRegister .containerReg {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    max-width: 100%;
+    min-height: 480px;
+  }
+  
+  .mainContainerRegister .form-containerReg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+  }
+  
+  .sign-in-containerReg {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+  }
+  
+  .overlay-containerReg {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+    background-color: #851313;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .overlay-containerReg img {
+    width: 120px;
+    margin-bottom: 30px;
+  }
+  
+  .mainContainerRegister .overlayReg {
+    background: #ffffff;
+    color: #851313;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+  }
+  
+  .containerReg.right-panel-active .overlayReg {
+    transform: translateX(50%);
+  }
+  
+  .inputsReg {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .overlay-panelReg {
+    position: absolute;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: left;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .overlay-rightReg {
+    transform: translateX(-20%);
+  }
+  
+  .overlay-leftReg {
+    right: 0;
+    transform: translateX(0);
+  }
+  .overlay-rightReg sup {
+    font-size: small;
+    font-weight: normal;
+  }
+  
+  .overlay-rightReg img {
+    width: 150px;
+  }
+  
+  .mainContainerRegister input {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  
+  .mainContainerRegister input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0;
+  }
+  
+  .idIconReg input {
+    padding-left: 40px;
+  }
+  
+  .idIconReg {
+    position: relative;
+  }
+  
+  .idIconReg img {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+    width: 15%;
+  }  
+
+/*____ Calendar ____*/
 .calendar {
     margin: 0 auto;
     width: 100%;
