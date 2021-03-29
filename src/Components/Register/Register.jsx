@@ -9,31 +9,46 @@ function Register() {
               <div className="overlayReg">
                 <div className="overlay-panelReg overlay-leftReg">
                   <h1>Registro</h1>
-                  <div className="idIconReg">
-                    <input type="email" placeholder="ID" />
-                    <img
-                      alt={"Logo Panteras"}
-                      src={require("../../Assets/upanterasblanco.svg")}
-                    />
+                  <div className="inputReg">
+                    <div className="idIconReg">
+                      <input type="email" placeholder="ID" />
+                      <img alt={"lockIcon"} src={require("../../Assets/logoUP.svg")}/>
+                    </div>
+                    <div className="idIconReg">
+                      <input type="text" placeholder="Nombre" />
+                      <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
+                    </div>
+                    <div className="idIconReg">
+                      <input type="password" placeholder="Contraseña" />
+                      <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                    </div>
+                    <div className="idIconReg">
+                      <input type="text" placeholder="Carrera" />
+                      <img alt={"lockIcon"} src={require("../../Assets/logoUP.svg")}/>
+                    </div>
+                    <div className="idIconReg">
+                      <input type="text" placeholder="Apellido" />
+                      <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
+                    </div>
+                    <div className="idIconReg">
+                      <input type="password" placeholder="Confirmar contraseña" />
+                      <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                    </div>
                   </div>
-                  <div className="inputsReg">
-                    <input type="text" placeholder="Nombre" />
-                    <input type="text" placeholder="Apellido" />
-                    <input type="password" placeholder="Contraseña" />
-                    <input
-                      id="userPwd2"
-                      type="password"
-                      placeholder="Confirmar contraseña"
-                    />
+                  <div class="sidebar-box">
+                    <select class="styled-select">
+                      <option value="0">Grupo al que te vas a unir:</option>
+                      <option value="1">Above</option>
+                      <option value="2">Baja</option>
+                      <option value="3">Coding</option>
+                      <option value="4">Data Science</option>
+                      <option value="5">Dynamics</option>
+                      <option value="6">E-racing</option>
+                      <option value="7">Green Squad</option>
+                      <option value="8">Robotics</option>
+                      <option value="9">Vortex</option>
+                    </select>
                   </div>
-                  <select name="cars" id="cars">
-                    <option></option>
-                    <option value="coding">Coding</option>
-                    <option value="baja">Baja</option>
-                    <option value="gaming">Gaming</option>
-                    <option value="vortex">Vortex</option>
-                    <option value="greensquad">Green Squad</option>
-                  </select>
                   <p>Ya tienes cuenta <Link to="/">inicia sesión</Link></p>
                   <button>Regístrate</button>
                 </div>
@@ -47,7 +62,7 @@ function Register() {
               <p>Si tienes problemas para acceder a tu cuenta, contáctanos</p>
               <img
                 alt={"Logo Panteras"}
-                src={require("../../Assets/upanterasblanco.svg")}
+                src={require("../../Assets/Coding[ING].svg")}
               />
             </div>
           </div>
