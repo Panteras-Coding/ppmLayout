@@ -449,9 +449,6 @@ header input{
 
 /*____Objective/Nivel___*/
 .objectiveStatus{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     width: 188px;
     padding: 5px;
     border-radius: 15px;
@@ -461,6 +458,17 @@ header input{
     margin-bottom: 10px;
 }
 
+.totalObj {
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    margin-bottom: inherit;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.objectives {
+    display: flex;
+}
 .objCount{
     background-color: #F7F7F7;
     border-radius: 15px;
@@ -491,12 +499,12 @@ header input{
     cursor: pointer;
 }
 
-.Nivel{
+.Cumplidos{
     background-color: #C186C5;
     color: white;
 }
 
-.Objetivos{
+.Pendientes{
     background-color: #FF7575;
     color: white;
 }
