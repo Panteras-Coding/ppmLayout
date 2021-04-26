@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import WorkTableNav from "./ViewComponents/WorkTableNav";
-import WorkList from "./ViewComponents/WorkList";
+import WorkTableNav from "./ViewComponents/WorkTableCmp/WorkTableNav";
+import WorkList from "./ViewComponents/WorkTableCmp/WorkList";
 import {
     Switch,
     Route,

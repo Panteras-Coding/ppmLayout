@@ -1,11 +1,11 @@
 import React from "react";
-import ObjectiveStatus from "./ViewComponents/ObjectiveStatus";
-import ObjectiveList from "./ViewComponents/ObjectiveList";
-import ProjectList from "./ViewComponents/ProjectList";
-import MessagesList from "./ViewComponents/MessagesList";
-import EventList from "./ViewComponents/EventsList";
-import ActivitiesList from "./ViewComponents/ActivitiesList";
-import ReminderList from "./ViewComponents/ReminderList";
+import ObjectiveStatus from "./ViewComponents/DashboardCmp/ObjectiveStatus";
+import ObjectiveList from "./ViewComponents/DashboardCmp/ObjectiveList";
+import ProjectList from "./ViewComponents/DashboardCmp/ProjectList";
+import MessagesList from "./ViewComponents/DashboardCmp/MessagesList";
+import EventList from "./ViewComponents/DashboardCmp/EventsList";
+import ActivitiesList from "./ViewComponents/DashboardCmp/ActivitiesList";
+import ReminderList from "./ViewComponents/DashboardCmp/ReminderList";
 
 const Dashboard = () => {
     return(

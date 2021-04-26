@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { DateContext } from '../../../../context/CalendarContext';
+import { DateContext } from '../../../../../context/CalendarContext';
 
 const CalendarHeader = ({ weekDays }) => {
   const dateContext = useContext(DateContext);
@@ -42,8 +42,8 @@ const CalendarHeader = ({ weekDays }) => {
       <div className="calendarHeader">
         {showMonth ?
           <div className={"toggler"}>
-            <div className="toLeft" onClick={toLeft}>  <img alt={"Left"} src={require('../../../../Assets/FlechaIzq.svg')} /> </div>
-            <div className="toRight" onClick={toRight}> <img alt={"Right"} src={require('../../../../Assets/flechaDer.svg')} /> </div>
+            <div className="toLeft" onClick={toLeft}>  <img alt={"Left"} src={require('../../../../../Assets/FlechaIzq.svg')} /> </div>
+            <div className="toRight" onClick={toRight}> <img alt={"Right"} src={require('../../../../../Assets/flechaDer.svg')} /> </div>
           </div>
           : null
         }

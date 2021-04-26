@@ -1,6 +1,6 @@
 import React from 'react';
 import { useContext } from "react";
-import { DateContext } from '../../../../context/CalendarContext';
+import { DateContext } from '../../../../../context/CalendarContext';
 
 const CalendarGrid = () => {
     const dateContext = useContext(DateContext)
