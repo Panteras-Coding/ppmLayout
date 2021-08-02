@@ -1,7 +1,40 @@
+import { render } from '@testing-library/react';
 import React from 'react';
+import { Component } from 'react';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
-function Register() { 
+class Register extends Component { 
+ constructor(props) {
+    super(props)
+      this.state = {
+        name:'',
+        lastName:'',
+        id:'',
+        hash:'',
+        carrera:'',
+        semestre:'',
+        grupo:''
+      }
+  }
+  changeHandler = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+  }
+
+  submitHandler = e => {
+    e.preventDefault()
+    console.log(this.state)
+    axios.post('https://panteras-project-management.wn.r.appspot.com/users/register', this.state)
+    .then(response => {
+      console.log(response)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+  }
+  
+  render() {
+    const { name, lastName, id, hash, carrera, semestre, grupo } = this.state
     return (
         <div className="mainContainerRegister">
           <div className="containerReg" id="containerReg">
@@ -9,48 +42,59 @@ function Register() {
               <div className="overlayReg">
                 <div className="overlay-panelReg overlay-leftReg">
                   <h1>Registro</h1>
-                  <div className="inputReg">
+                  <form className="inputReg" onSubmit={this.submitHandler}>
                     <div className="idIconReg">
-                      <input type="email" placeholder="ID" />
+                      <input type="text" name="id" placeholder="ID" value={id} onChange={this.changeHandler}/>
                       <img alt={"lockIcon"} src={require("../../Assets/logoUP.svg")}/>
                     </div>
                     <div className="idIconReg">
-                      <input type="text" placeholder="Nombre" />
+                      <input type="text" name="name" placeholder="Nombre" value={name} onChange={this.changeHandler}/>
                       <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
                     </div>
                     <div className="idIconReg">
-                      <input type="password" placeholder="Contraseña" />
-                      <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
-                    </div>
-                    <div className="idIconReg">
-                      <input type="text" placeholder="Carrera" />
-                      <img alt={"lockIcon"} src={require("../../Assets/logoUP.svg")}/>
-                    </div>
-                    <div className="idIconReg">
-                      <input type="text" placeholder="Apellido" />
+                      <input type="text" name="semestre" placeholder="Semestre" value={semestre} onChange={this.changeHandler}/>
                       <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
                     </div>
                     <div className="idIconReg">
-                      <input type="password" placeholder="Confirmar contraseña" />
+                      <input type="password" name="hash" placeholder="Contraseña" value={hash} onChange={this.changeHandler}/>
                       <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
                     </div>
-                  </div>
-                  <div class="sidebar-box">
-                    <select class="styled-select">
-                      <option value="0">Grupo al que te vas a unir:</option>
-                      <option value="1">Above</option>
-                      <option value="2">Baja</option>
-                      <option value="3">Coding</option>
-                      <option value="4">Data Science</option>
-                      <option value="5">Dynamics</option>
-                      <option value="6">E-racing</option>
-                      <option value="7">Green Squad</option>
-                      <option value="8">Robotics</option>
-                      <option value="9">Vortex</option>
-                    </select>
-                  </div>
-                  <p>Ya tienes cuenta <Link to="/">inicia sesión</Link></p>
-                  <button>Regístrate</button>
+                    <div>
+                        <select name="carrera" value={carrera} onChange={this.changeHandler}>
+                            <option>Ingeniería a la que perteneces:</option>
+                            <option value="Animació y Videojuegos">Animación y Videojuegos</option>
+                            <option value="Innovación y Diseño">Innovaxión y Diseño</option>
+                            <option value="TI">TI</option>
+                            <option value="Industrial">Industrial</option>
+                            <option value="Mecánica">Mecánica</option>
+                            <option value="Mecatrónica">Mecatrónica</option>
+                        </select>
+                    </div>
+                    <div className="idIconReg">
+                      <input type="text" name="lastName" placeholder="Apellido" value={lastName} onChange={this.changeHandler}/>
+                      <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
+                    </div>
+                    {/* <div className="idIconReg">
+                      <input type="password" placeholder="Confirmar contraseña"/>
+                      <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                    </div> */}
+                    <div class="sidebar-box">
+                      <select class="styled-select" name="grupo" value={grupo} onChange={this.changeHandler}>
+                        <option>Grupo al que te vas a unir:</option>
+                        <option value="Above">Above</option>
+                        <option value="Baja">Baja</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Dynamics">Dynamics</option>
+                        <option value="E-racing">E-racing</option>
+                        <option value="Green Squad">Green Squad</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Vortex">Vortex</option>
+                      </select>
+                    </div>
+                    <p>Ya tienes cuenta <Link to="/">inicia sesión</Link></p>
+                    <button type="submit">Regístrate</button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -67,7 +111,8 @@ function Register() {
             </div>
           </div>
         </div>
-     );
+    );
+  }
 }
 
 export default Register;
