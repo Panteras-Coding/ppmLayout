@@ -30,7 +30,7 @@ function Login(props){
                             <input type="password" placeholder="Contraseña" />
                             <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
                         </div>
-                        <p>Si aún no tienes cuenta, <Link to="/registration">regístrate aquí</Link></p> 
+                        <p>PRUEBAAAAASi aún no tienes cuenta, <Link to="/registration">regístrate aquí</Link></p> 
                         <button onClick={props.changeLog}>Login</button>
                     </form>
                 </div>
