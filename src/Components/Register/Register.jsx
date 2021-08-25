@@ -43,36 +43,42 @@ class Register extends Component {
                 <div className="overlay-panelReg overlay-leftReg">
                   <h1>Registro</h1>
                   <form className="inputReg" onSubmit={this.submitHandler}>
-                    <div className="idIconReg">
-                      <input type="text" name="id" placeholder="ID" value={id} onChange={this.changeHandler}/>
-                      <img alt={"lockIcon"} src={require("../../Assets/logoUP.svg")}/>
-                    </div>
-                    <div className="idIconReg">
-                      <input type="text" name="name" placeholder="Nombre" value={name} onChange={this.changeHandler}/>
+                    <div className="prueba">
+                      <div className="idIconReg">
+                        <input type="text" name="id" placeholder="ID" value={id} onChange={this.changeHandler}/>
+                        <img alt={"lockIcon"} src={require("../../Assets/logoUP.svg")}/>
+                      </div>
+                      <div className="idIconReg">
+                        <input type="text" name="name" placeholder="Nombre" value={name} onChange={this.changeHandler}/>
+                        <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
+                      </div>
+                      <div className="idIconReg">
+                      <input type="text" name="lastName" placeholder="Apellido" value={lastName} onChange={this.changeHandler}/>
                       <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
                     </div>
-                    <div className="idIconReg">
-                      <input type="text" name="semestre" placeholder="Semestre" value={semestre} onChange={this.changeHandler}/>
-                      <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
-                    </div>
-                    <div className="idIconReg">
-                      <input type="password" name="hash" placeholder="Contraseña" value={hash} onChange={this.changeHandler}/>
-                      <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                      <div className="idIconReg">
+                        <input type="text" name="semestre" placeholder="Semestre" value={semestre} onChange={this.changeHandler}/>
+                        <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
+                      </div>
+                      <div className="idIconReg">
+                        <input type="password" name="hash" placeholder="Contraseña" value={hash} onChange={this.changeHandler}/>
+                        <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                      </div>
+                      <div className="idIconReg">
+                        <input type="password" name="hash" placeholder="Confirmar contraseña" value={hash} onChange={this.changeHandler}/>
+                        <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                      </div>
                     </div>
                     <div>
                         <select name="carrera" value={carrera} onChange={this.changeHandler}>
                             <option>Ingeniería a la que perteneces:</option>
                             <option value="Animació y Videojuegos">Animación y Videojuegos</option>
-                            <option value="Innovación y Diseño">Innovaxión y Diseño</option>
-                            <option value="TI">TI</option>
+                            <option value="Innovación y Diseño">Innovación y Diseño</option>
                             <option value="Industrial">Industrial</option>
                             <option value="Mecánica">Mecánica</option>
                             <option value="Mecatrónica">Mecatrónica</option>
+                            <option value="TI">TI</option>
                         </select>
-                    </div>
-                    <div className="idIconReg">
-                      <input type="text" name="lastName" placeholder="Apellido" value={lastName} onChange={this.changeHandler}/>
-                      <img alt={"lockIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
                     </div>
                     {/* <div className="idIconReg">
                       <input type="password" placeholder="Confirmar contraseña"/>

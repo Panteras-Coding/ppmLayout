@@ -21,12 +21,12 @@ const App = () =>{
                     <SideBar
                         change={setShowBar}
                         status={completeBar}
-                        name={"Armando Hernández"}
+                        name={"Gabriela Velázquez"}
                         notHome={changeView}
                     />
                     <Main
                         status={completeBar}
-                        name={"Armando Hernandez"}
+                        name={"Gabriela Velázquez"}
                         indash={inDashboard}
                     />
                 </div>
