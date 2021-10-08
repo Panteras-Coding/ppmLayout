@@ -80,10 +80,11 @@ class Register extends Component {
                             <option value="TI">TI</option>
                         </select>
                     </div>
-                    {/* <div className="idIconReg">
+                    {/*<div className="idIconReg">
                       <input type="password" placeholder="Confirmar contraseña"/>
                       <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
                     </div> */}
+                    {/*PROPS*/}
                     <div class="sidebar-box">
                       <select class="styled-select" name="grupo" value={grupo} onChange={this.changeHandler}>
                         <option>Grupo al que te vas a unir:</option>
