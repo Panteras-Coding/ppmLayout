@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import Register from "../Register/Register.js";
-import { MainContainer, MainContainerForm, MainContainerButton, MainContainerInput } from "./Login.style";
+import { MainContainer, MainContainerForm, MainContainerButton, MainContainerInput, MainContainerIconImg } from "./Login.style";
 
 
 function Login(props){
@@ -27,11 +27,11 @@ function Login(props){
                             <img alt={"Logo Panteras"} src={require("../../Assets/businessman.svg")}/>
                             <div className="idIcon">
                                 <MainContainerInput inputType="email" placeholder="Usuario"/>
-                                <img alt={"idIcon"} src={require("../../Assets/usuario-de-perfil.svg")}/>
+                                <MainContainerIconImg alt={"idIcon"} src={require("../../Assets/usuario-de-perfil.svg")}></MainContainerIconImg>
                             </div>
                             <div className="idIcon">
-                            <MainContainerInput inputType="password" placeholder="Contraseña"/>
-                                <img alt={"lockIcon"} src={require("../../Assets/lock.svg")}/>
+                                <MainContainerInput inputType="password" placeholder="Contraseña"/>
+                                <MainContainerIconImg alt={"lockIcon"} src={require("../../Assets/lock.svg")}></MainContainerIconImg>
                             </div>
                             <p>Si aún no tienes cuenta, <Link to="/registration">regístrate aquí</Link></p> 
                             <MainContainerButton onClick={props.changeLog}>Login</MainContainerButton>

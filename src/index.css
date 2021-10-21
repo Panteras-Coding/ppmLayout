@@ -1067,10 +1067,10 @@ hr {
 	width: 100%;
 }*/
 
-.mainContainerLogin input:focus {
+/*.mainContainerLogin input:focus {
     border-color: dodgerblue;
     box-shadow: 0 0 8px 0;
-}
+}*/
 
 .idIcon input {
     padding-left: 40px;
@@ -1090,8 +1090,6 @@ hr {
     width: 15%;
 }
 
-
-
 .mainContainerLogin .container {
 	background-color: #fff;
 	border-radius: 10px;
@@ -1103,7 +1101,6 @@ hr {
 	max-width: 100%;
 	min-height: 480px;
 }
-
 
 .mainContainerLogin .form-container {
 	position: absolute;

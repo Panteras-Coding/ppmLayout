@@ -70,4 +70,20 @@ export const MainContainerInput = styled.input.attrs(props => ({
         transition: .3s;
         width: 100%;
 
+        :focus {
+            border-color: dodgerblue;
+            box-shadow: 0 0 8px 0;
+        }  
+
+`
+
+export const MainContainerIconImg = styled.img `
+    position: absolute;
+    color: #aaa;
+    left: 0;
+    padding: 9px 8px;
+    transition: .3s;
+    top: 8px;
+    width: 15%;
+    
 `
